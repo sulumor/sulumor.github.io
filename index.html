@@ -1,24 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Romuald Patfoort | Sulumor | Développeur</title>
   </head>
   <body>
-    <h1>Bienvenue sur mon blog</h1>
-    <div class="container">
-      <img
-        src="https://images.unsplash.com/photo-1694619362413-4979885b4f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-        alt="BMW"
-      />
-    </div>
-    <div class="container">
-      <img
-        src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1948&q=80"
-        alt="Velo"
-      />
-    </div>
+    <header class="header">
+      <div class="header__title-container">ROMUALD PATFOORT</div>
+      <nav class="header__list-container">
+        <ul>
+          <li class="header__list"><a href="#">Accueil</a></li>
+          <li class="header__list"><a href="#">À propos</a></li>
+          <li class="header__list"><a href="#">Réalisations</a></li>
+          <li class="header__list"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="home">
+        <h1 class="home__title">
+          SALUT, JE SUIS ROMUALD PATFOORT OU BIEN SULUMOR
+        </h1>
+        <p class="ḧome__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          libero dolores pariatur voluptatem quis tempore aut, adipisci rerum
+          labore inventore facere molestias ut? Quidem, possimus.
+        </p>
+        <a class="home__link" href="#projects">Mes réalisations</a>
+      </section>
+      <section id="about">
+        <h2 class="about__title">À propos</h2>
+        <article class="about__article">
+          <h3 class="about__article-title">A savoir sur moi</h3>
+          <p class="about__article-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            vel voluptatem vero saepe dolor sapiente, a officiis nostrum ipsam
+            cum, ut in magni ea modi accusantium asperiores, quam quas itaque
+            molestias magnam. Suscipit molestias veritatis eos necessitatibus
+            minus sapiente quod vel tempore tenetur inventore, reprehenderit
+            nisi tempora temporibus? Dolorem facere error corporis nisi aliquam
+            omnis similique repellendus molestias placeat, blanditiis voluptatem
+            excepturi. Quaerat dolores eos ut autem nihil itaque minus, quia
+            illum sunt iure rem consequuntur repellendus velit molestiae fuga
+            odit inventore aperiam ipsum sequi maiores doloremque, officiis
+            dicta? Ducimus similique quae porro corrupti. Suscipit at et quod
+            soluta velit?
+          </p>
+          <a href="#contact" class="about__article-link">Contactez moi</a>
+        </article>
+        <article class="about__article">
+          <h3 class="about__article-title">Mes compétences</h3>
+        </article>
+      </section>
+      <section id="projects"></section>
+      <section id="contact"></section>
+    </main>
+    <footer></footer>
   </body>
 </html>
