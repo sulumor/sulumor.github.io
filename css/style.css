@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -24,7 +25,6 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 2rem 5rem;
 }
 
 .about__title,
@@ -35,7 +35,6 @@ h3 {
 }
 
 .main {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +48,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
-  width: 100%;
+  padding: 1rem 2rem;
+  width: 100vw;
 }
 
 .header__link {
@@ -65,9 +64,14 @@ h3 {
 }
 
 .header__link--sub {
+  display: none;
   opacity: 0;
   position: relative;
   left: -12rem;
+}
+
+.header nav {
+  display: none;
 }
 
 .header__list-container {
@@ -84,7 +88,7 @@ h3 {
 /** HOME **/
 
 #home {
-  height: calc(100vh - 3rem);
+  padding: 2rem;
   margin-top: 3rem;
   background-image: radial-gradient(
       circle at 67% 83%,
@@ -163,9 +167,10 @@ h3 {
 
 .home__title {
   display: inline;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   position: relative;
+  text-align: center;
 }
 
 .home__title--main {
@@ -180,25 +185,24 @@ h3 {
 }
 
 .home__text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: inline;
 }
 
-.home__link {
-  padding: 1rem 2rem;
+.home__link,
+.about__article-link,
+.projects__article-link {
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  color: var(--fourth-color);
-  border: solid 4px var(--fourth-color);
+  color: var(--third-color);
+  background-color: var(--fourth-color);
   border-radius: 2rem;
   font-weight: 600;
   transition: 300ms ease-in-out;
 }
 
 .home__cards-container {
-  position: relative;
-  top: 6rem;
-  right: 1.5rem;
-  align-self: flex-end;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -258,37 +262,36 @@ h3 {
 
 #about {
   background-color: var(--third-color);
-  padding: 8rem 5rem 5rem;
+  padding: 5rem 2rem 2rem;
 }
 
-.about__intro {
-  font-size: 1.2rem;
-}
-.about__article-container {
-  display: flex;
-  gap: 2rem;
+.about__intro,
+.about__article-text,
+.projects__article-text {
+  text-align: justify;
 }
 
+.about__article-container,
 .about__article {
-  width: calc(50% - 2rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.about__article-title {
+.about__article {
+  gap: 1.5rem;
+}
+
+.about__article-title,
+.projects__article-title {
   font-size: 1.5rem;
 }
 
-.about__article-link {
+.about__article-link,
+.projects__article-link {
+  align-self: center;
   width: fit-content;
-  padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: var(--fourth-color);
-  border: solid 2px var(--fourth-color);
-  border-radius: 2rem;
-  font-weight: 600;
-  transition: 300ms ease-in-out;
 }
 
 .about__article-tag-container {
@@ -299,10 +302,41 @@ h3 {
 
 .about__article-tag {
   background-color: var(--second-color);
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
   color: var(--primary-color);
   font-weight: 100;
+}
+
+/** PROJECTS **/
+
+#projects {
+  padding: 5rem 2rem 2rem;
+  background: rgb(43, 45, 66);
+  background: linear-gradient(
+    174deg,
+    rgba(43, 45, 66, 0.9108893557422969) 0%,
+    rgba(141, 153, 174, 1) 10%,
+    rgba(237, 242, 244, 1) 100%
+  );
+}
+
+.projects__container,
+.projects__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact {
+  padding: 5rem 2rem 2rem;
+  background-color: var(--third-color);
+}
+
+footer {
+  padding: 5rem 2rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--third-color);
 }
 
 /** TRANSITIONS **/
@@ -355,24 +389,6 @@ h3 {
 
 /** ANIMATIONS **/
 
-.header__link:hover {
-  .header__link--main {
-    animation: appear 300ms 1 reverse forwards;
-  }
-  .header__link--sub {
-    animation: appear 300ms 1 normal forwards;
-  }
-}
-
-.home__title:hover {
-  .home__title--main {
-    animation: appear 300ms 1 reverse forwards;
-  }
-  .home__title--sub {
-    animation: appear 300ms 1 normal forwards;
-  }
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -385,12 +401,26 @@ h3 {
 
 /** MEDIAS QUERIES **/
 
-@media screen and (max-width: 991.98px) {
-  #home {
-    height: calc(100% + 3rem);
+@media screen and (min-width: 991.98px) {
+  .header nav {
+    display: block;
   }
 
-  .header nav {
-    display: none;
+  .home__title:hover {
+    .home__title--main {
+      animation: appear 300ms 1 reverse forwards;
+    }
+    .home__title--sub {
+      animation: appear 300ms 1 normal forwards;
+    }
+  }
+
+  .header__link:hover {
+    .header__link--main {
+      animation: appear 300ms 1 reverse forwards;
+    }
+    .header__link--sub {
+      animation: appear 300ms 1 normal forwards;
+    }
   }
 }

@@ -44,6 +44,7 @@ html {
   -ms-text-size-adjust: 100%; /* 4 */
   -ms-overflow-style: scrollbar; /* 5 */
   -webkit-tap-highlight-color: transparent; /* 6 */
+  overflow-x: hidden;
 }
 
 /* IE10+ doesn't honor `<meta name="viewport">` in some cases. */
