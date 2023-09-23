@@ -45,11 +45,14 @@ h3 {
   top: 0;
   z-index: 2;
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem 2rem;
   width: 100vw;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__link {
@@ -70,7 +73,7 @@ h3 {
   left: -12rem;
 }
 
-.header nav {
+.header__content nav {
   display: none;
 }
 
@@ -83,6 +86,49 @@ h3 {
 
 .header__list-link {
   padding: 0.5rem 1.5rem;
+}
+
+.button__check {
+  display: none;
+}
+
+.button__hamburger {
+  width: 2.5rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.button__hamburger div {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.header__content--sm-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  opacity: 100;
+  visibility: visible;
+}
+
+.header__list--sm-menu {
+  padding: 1rem;
+  border-top: solid 1px var(--third-color);
+  text-align: right;
+  background-color: white;
+  font-weight: 600;
 }
 
 /** HOME **/
@@ -402,7 +448,7 @@ footer {
 /** MEDIAS QUERIES **/
 
 @media screen and (min-width: 991.98px) {
-  .header nav {
+  .header__content > nav {
     display: block;
   }
 

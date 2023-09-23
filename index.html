@@ -9,26 +9,56 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__link" href="/">
-        <span class="header__link--main">ROMUALD PATFOORT</span
-        ><span class="header__link--sub">SULUMOR</span>
-      </a>
-      <nav>
-        <ul class="header__list-container">
-          <li class="header__list">
-            <a class="header__list-link" href="#">Accueil</a>
-          </li>
-          <li class="header__list">
-            <a class="header__list-link" href="#about">À propos</a>
-          </li>
-          <li class="header__list">
-            <a class="header__list-link" href="#projects">Réalisations</a>
-          </li>
-          <li class="header__list">
-            <a class="header__list-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__content">
+        <a class="header__link" href="/">
+          <span class="header__link--main">ROMUALD PATFOORT</span>
+          <span class="header__link--sub">SULUMOR</span>
+        </a>
+        <nav>
+          <ul class="header__list-container">
+            <li class="header__list">
+              <a class="header__list-link" href="#">Accueil</a>
+            </li>
+            <li class="header__list">
+              <a class="header__list-link" href="#about">À propos</a>
+            </li>
+            <li class="header__list">
+              <a class="header__list-link" href="#projects">Réalisations</a>
+            </li>
+            <li class="header__list">
+              <a class="header__list-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__btn-container">
+          <label for="button__check" class="button__hamburger">
+            <div class="button__hamburger-line1"></div>
+            <div class="button__hamburger-line2"></div>
+            <div class="button__hamburger-line3"></div>
+          </label>
+        </div>
+      </div>
+      <div class="header__content--sm-menu">
+        <nav>
+          <ul class="header__list-container--sm-menu">
+            <li class="header__list--sm-menu">
+              <a href="#" class="header__likst-link--sm-menu">Accueil</a>
+            </li>
+            <li class="header__list--sm-menu">
+              <a href="#about" class="header__likst-link--sm-menu">À propos</a>
+            </li>
+            <li class="header__list--sm-menu">
+              <a href="#projects" class="header__likst-link--sm-menu">
+                Réalisations
+              </a>
+            </li>
+            <li class="header__list--sm-menu">
+              <a href="#contact" class="header__likst-link--sm-menu">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <!-- Changer icone Twitter en X -->
@@ -217,5 +247,6 @@
       accusamus quasi obcaecati sequi, amet debitis voluptatum quae mollitia.
       Corrupti sunt nam possimus! Doloribus, voluptatum consequatur?
     </footer>
+    <script src="app.js" />
   </body>
 </html>
