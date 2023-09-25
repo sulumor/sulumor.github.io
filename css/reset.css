@@ -326,7 +326,7 @@ See:
 *  https://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
 */
 
-a,
+/*a,
 area,
 button,
 [role='button'],
@@ -337,7 +337,7 @@ summary,
 textarea {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-}
+}*/
 
 /*
 
