@@ -103,7 +103,7 @@ h3 {
 }
 
 .button__hamburger div {
-  width: 2.5rem;
+  width: 2rem;
   height: 0.1rem;
   background-color: var(--primary-color);
   transition: all 0.3s;
@@ -124,7 +124,7 @@ h3 {
 }
 
 .header__list--sm-menu {
-  padding: 1rem;
+  padding: 1rem 1.5rem 1rem;
   border-top: solid 1px var(--third-color);
   text-align: right;
   background-color: white;
@@ -292,7 +292,6 @@ h3 {
 
 .twitter {
   margin: calc(100% - 2.8rem) 0 0 0.8rem;
-  fill: #03a9f4;
 }
 
 .github {
@@ -411,9 +410,12 @@ footer {
 .home__card--border_top_right:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #03a9f4;
-  .twitter {
+  background-color: black;
+  .twitter .black {
     fill: white;
+  }
+  .twitter .white {
+    fill: black;
   }
 }
 .home__card--border_down_left:hover {
@@ -430,6 +432,18 @@ footer {
   background-color: #f14336;
   .gmail {
     fill: white;
+  }
+}
+
+.cross {
+  .button__hamburger-line1 {
+    transform: translateY(0.6rem) rotate(45deg) scale(0.8);
+  }
+  .button__hamburger-line2 {
+    transform: scale(0);
+  }
+  .button__hamburger-line3 {
+    transform: translateY(-0.6rem) rotate(-45deg) scale(0.8);
   }
 }
 
