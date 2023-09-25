@@ -88,10 +88,6 @@ h3 {
   padding: 0.5rem 1.5rem;
 }
 
-.button__check {
-  display: none;
-}
-
 .button__hamburger {
   width: 2.5rem;
   height: 2rem;
@@ -100,6 +96,9 @@ h3 {
   justify-content: center;
   gap: 0.5rem;
   cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
 }
 
 .button__hamburger div {
