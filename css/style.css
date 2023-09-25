@@ -353,6 +353,10 @@ h3 {
   font-weight: 100;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 /** PROJECTS **/
 
 #projects {
@@ -464,6 +468,14 @@ footer {
 @media screen and (min-width: 991.98px) {
   .header__content > nav {
     display: block;
+  }
+
+  .header__link--sub {
+    display: inline;
+  }
+
+  .button__hamburger {
+    display: none;
   }
 
   .home__title:hover {
