@@ -3,7 +3,7 @@ const smallMenu = document.querySelector('.header__content--sm-menu')
 const linksSmallMenu = document.querySelectorAll('.header__list-link--sm-menu')
 
 btnSmallMenu.addEventListener('click', () => {
-  smallMenu.classList.toggle('active')
+  smallMenu.style.display = 'inline-block'
   btnSmallMenu.classList.toggle('cross')
 })
 
