@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -41,6 +42,7 @@ h3 {
 /** HEADER **/
 
 .header {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   z-index: 2;
