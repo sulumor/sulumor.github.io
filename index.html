@@ -60,12 +60,12 @@
     <main class="main">
       <section id="home">
         <h1 class="home__title">
-          SALUT, JE SUIS <span class="home__title--main">ROMUALD PATFOORT</span
-          ><span class="home__title--sub">SULUMOR</span>
+          SALUT, JE SUIS <span class="home__title--main">ROMUALD </span>
+          <span class="home__title--sub">SULUMOR</span>
         </h1>
         <p class="home__text">
-          Étudiant chez <span class="bold">O'clock</span> dans la promotion
-          Gyoza (11/09/23 -> 28/02/24), je suis une formation de
+          Étudiant chez <span class="bold">O'clock</span> - promotion Gyoza - je
+          suis
           <span class="bold">développeur web Javascript et web mobile</span>.
         </p>
         <a class="home__link" href="#projects">Mes réalisations</a>
@@ -159,8 +159,9 @@
         <h2 class="about__title">À propos</h2>
         <p class="about__intro">
           Vous trouverez ici plus d'informations à propos de moi, ce que je
-          fais, et mes principales compétences dans la programmation mais aussi
-          la technologie.
+          fais, et mes principales compétences dans la
+          <span class="bold">programmation</span> mais aussi la
+          <span class="bold">technologie</span>.
         </p>
         <div class="about__article-container">
           <article class="about__article">
@@ -170,10 +171,11 @@
               chance d'avoir un ordinateur très tôt. Avide d'apprendre, je l'ai
               démonté de nombreuses fois afin d'y comprendre le fonctionnement
               mais aussi de modifier ce qui nous était possible à l'époque (mise
-              en place d'un double boot avec Linux). Malgré cela je me dirige
-              dans des études d'hôtellerie qui m'ont mené jusqu'au poste de
-              responsable d'exploitation d'une équipe de plus de 250
-              collaborateurs. L'appel de l'informatique fut trop forte et j'ai
+              en place d'un double boot avec <span class="bold">Linux</span>).
+              Malgré cela je me dirige dans des études d'hôtellerie qui m'ont
+              mené jusqu'au poste de responsable d'exploitation d'une équipe de
+              plus de 250 collaborateurs. L'appel de
+              <span class="bold">l'informatique</span> fut trop forte et j'ai
               entrepris une reconvertion professionnelle. <br />
               Vous pouvez voir certaines de mes réalisations finis ou en cours
               dans la section <span class="bold">Réalisations</span>. Je suis
@@ -189,11 +191,12 @@
             <div class="about__article-tag-container">
               <span class="about__article-tag">HTML</span>
               <span class="about__article-tag">CSS</span>
-              <span class="about__article-tag">Responsive Design</span>
               <span class="about__article-tag">JavaScript</span>
               <span class="about__article-tag">VueJS</span>
               <span class="about__article-tag">React</span>
               <span class="about__article-tag">Sass</span>
+              <span class="about__article-tag">Responsive Design</span>
+              <span class="about__article-tag">API</span>
             </div>
           </article>
         </div>
@@ -202,14 +205,30 @@
         <h2 class="projects__title">Mes réalisations</h2>
         <div class="projects__container">
           <article class="projects__article">
-            <h3 class="projects__article-title">Jeux</h3>
+            <h3 class="projects__article-title">Jeux de mots</h3>
+            <div class="projects__article-img-container">
+              <a
+                class="projects__article-img-link"
+                href="https://jeux-du-pendu.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="projects__article-img"
+                  src="./pictures/jeux_de_mots.png.png"
+                  alt="page_d'accueil_du_site_jeux-du-pendu.vercel.app"
+                />
+              </a>
+            </div>
             <p class="projects__article-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-              necessitatibus odit exercitationem repellat non nisi voluptatem
-              recusandae perferendis. Earum, amet officiis neque autem
-              doloremque eum!
+              Site regroupant 2 jeux, <span class="bold">le Pendu</span> et
+              <span class="bold">l'Anagramme</span> avec 2 niveaux de difficulté
+              : enfant, sur une base de mots propre au site, et adulte, trouvant
+              des mots aléatoires via une API.
             </p>
-            <a href="#" class="projects__article-link">Lien vers new page</a>
+            <a href="/pages/jeuxdemots.html" class="projects__article-link"
+              >En savoir plus</a
+            >
           </article>
           <article class="projects__article">
             <h3 class="projects__article-title">Maquette</h3>
@@ -265,6 +284,6 @@
       accusamus quasi obcaecati sequi, amet debitis voluptatum quae mollitia.
       Corrupti sunt nam possimus! Doloribus, voluptatum consequatur?
     </footer>
-    <script src="./app.js"></script>
+    <script src="./app.js" type="text/javascript"></script>
   </body>
 </html>
