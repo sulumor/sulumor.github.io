@@ -226,7 +226,7 @@ h3 {
   opacity: 0;
   color: var(--fifth-color);
   position: absolute;
-  left: 29.813rem;
+  left: 320px;
 }
 
 .home__text {
@@ -387,11 +387,15 @@ h3 {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   color: var(--primary-color);
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .bold {
   font-weight: 800;
+}
+
+.red {
+  color: var(--fourth-color);
 }
 
 /** PROJECTS **/
@@ -414,7 +418,13 @@ h3 {
   gap: 1rem;
 }
 
-.projects__article-img-container {
+.projects__article {
+  padding: 1.5rem;
+  border-bottom: dotted 1px var(--primary-color);
+}
+
+.projects__article-img-container,
+.home__img-container {
   max-width: 900px;
   align-self: center;
   border: solid 0.1rem var(--primary-color);
@@ -441,7 +451,8 @@ footer {
 /** TRANSITIONS **/
 
 .home__link:hover,
-.about__article-link:hover {
+.about__article-link:hover,
+.projects__article-link:hover {
   scale: 1.1;
   background-color: var(--fourth-color);
   color: white;

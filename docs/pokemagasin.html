@@ -59,24 +59,26 @@
     </header>
     <main class="main">
       <section id="home">
-        <h1 class="home__title">JEUX DE MOTS</h1>
+        <h1 class="home__title">POKEMAGASIN</h1>
         <div class="home__img-container">
           <img
             class="home__img"
-            src="../pictures/jeux_de_mots.png"
-            alt="page_d'accueil_du_site_jeux-du-pendu.vercel.app"
+            src="../pictures/pokemagasin.png"
+            alt="page_d'accueil_du_site_pokemagasin.sulumor.vercel.app"
           />
         </div>
         <p class="home__text">
-          Site regroupant 2 jeux, <span class="bold">le Pendu</span> et
-          <span class="bold">l'Anagramme</span> avec 2 niveaux de difficulté :
-          enfant, sur une base de mots propre au site, et adulte, trouvant des
-          mots aléatoires via une API.
+          Site <span class="bold">E-commerce</span> factice sur les pokémons de
+          la 1ère génération (les 151 premiers). Il reprend les principales
+          mécaniques de ce type de site c'est à dire la récupération de donnée
+          via une <span class="bold">API</span>, mise en place de fiche pour
+          chaque 'produit', possibilité de filtrer, mise dans un
+          <span class="bold">panier</span>, gestion des stocks.
         </p>
         <a
           class="home__link"
           target="_blank"
-          href="https://jeux-du-pendu.vercel.app"
+          href="https://pokemagasin.sulumor.vercel.app"
           >Lien vers le site</a
         >
       </section>
@@ -86,49 +88,28 @@
           <article class="about__article">
             <h3 class="about__article-title">A savoir sur ce projet</h3>
             <p class="about__article-text">
-              Le projet est développé avec
-              <span class="bold">VueJS 3</span>. Ne trouvant pas
-              <span class="bold">d'API</span> me générant de mots pour une
-              enfant de 6/7 ans, je prend le partie de créer 2 niveaux, enfant
-              et adulte. Le niveau enfant chosit un mot dans un fichier
-              <span class="bold">JSON</span> que j'ai créé. Le niveau adulte va,
-              quant à lui, faire appel à l'API
-              <a
-                href="https://trouve-mot.fr/api/random"
-                target="_blank"
-                class="bold red"
-              >
-                trouve-mot </a
-              >. En gardant la même base de mot, j'ai ajouter un jeu d'anagramme
-              avec un temps pour trouver le bon mot.<br />
-              Ce projet m'a permis de découvrir
-              <span class="bold">Pinia, PrimeVue et PrimeFlex</span> mais aussi
-              d'appronfondir mes connaissances sur VueJS, l'utilisation du
-              <span class="bold">Router</span>, la gestion du temps de
-              chargement pour
-              <span class="bold">l'expérience utilisateur</span> mais aussi les
-              <span class="bold">stores</span>.<br />
-              À la fin de chaque partie, le joueur a la posibilité de
-              sauvegarder son score. Cela se fait sur une
-              <span class="bold">base de données</span> via
-              <a href="https://supabase.com/" target="_blank" class="bold red"
-                >Supabase</a
-              >.
+              Ce site m'a permis de pratiquer
+              <span class="bold">VueJS 2</span> en Option API et les mécaniques
+              d'un site E-commerce. Ce fut aussi pour moi la découverte de
+              l'utilisation des <span class="bold">frameworks</span>.
+              Utilisation d'<span class="bold">Axios</span> afin de faire
+              l'appel à l'API
+              <a href="https://pokeapi.co/" class="bold red"> pokeapi</a>. Mise
+              en place du store avec <span class="bold">VueX</span> mais aussi
+              d'une <span class="bold">page d'attente</span> pendant la
+              récupération des données.
             </p>
           </article>
           <article class="about__article">
             <h3 class="about__article-title">Les compétences déployées</h3>
             <div class="about__article-tag-container">
-              <span class="about__article-tag">VueJS 3</span>
-              <span class="about__article-tag">Composition API</span>
-              <span class="about__article-tag">Pinia</span>
+              <span class="about__article-tag">VueJS 2</span>
+              <span class="about__article-tag">Option API</span>
+              <span class="about__article-tag">VueX</span>
               <span class="about__article-tag">Vue Router</span>
-              <span class="about__article-tag">Fetch API</span>
-              <span class="about__article-tag">TypeScript</span>
-              <span class="about__article-tag">BDD</span>
-              <span class="about__article-tag">Filtre d'un tableau</span>
+              <span class="about__article-tag">Axios</span>
               <span class="about__article-tag"
-                >Utilisation librairie de composants</span
+                >Filtre via une sélection ou bien une recherche</span
               >
             </div>
           </article>
