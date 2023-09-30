@@ -236,7 +236,8 @@ h3 {
 
 .home__link,
 .about__article-link,
-.projects__article-link {
+.projects__article-link,
+.contact__form-button {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   color: var(--third-color);
@@ -436,13 +437,49 @@ h3 {
   width: 100%;
 }
 
+/** CONTACT **/
+
 #contact {
   padding: 5rem 2rem 2rem;
   background-color: var(--third-color);
 }
 
+.contact__form,
+.contact__form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-container {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contact__form-container input[type='text'],
+.contact__form-container textarea {
+  border: none;
+  border-bottom: 1px solid var(--second-color);
+  color: var(--primary-color);
+  display: block;
+  padding: 1rem 0.5rem 0.4rem;
+  width: 100%;
+}
+
+.contact__form-label {
+  color: var(--second-color);
+  font-weight: 100;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+
+/** FOOTER **/
+
 footer {
-  padding: 5rem 2rem 2rem;
+  padding: 2rem 2rem 3rem;
+  text-align: center;
   background-color: var(--primary-color);
   color: var(--third-color);
 }
@@ -451,7 +488,8 @@ footer {
 
 .home__link:hover,
 .about__article-link:hover,
-.projects__article-link:hover {
+.projects__article-link:hover,
+.contact__form-button:hover {
   scale: 1.1;
   background-color: var(--fourth-color);
   color: white;
@@ -509,6 +547,22 @@ footer {
   .button__hamburger-line3 {
     transform: translateY(-0.6rem) rotate(-45deg) scale(0.8);
   }
+}
+
+.contact__form-container input[type='text']:valid,
+.contact__form-container input[type='text']:focus,
+.contact__form-container textarea:valid,
+.contact__form-container textarea:focus {
+  outline: none;
+  border-bottom-color: var(--primary-color);
+}
+
+.contact__form-container input[type='text']:valid + .contact__form-label,
+.contact__form-container input[type='text']:focus + .contact__form-label,
+.contact__form-container textarea:focus + .contact__form-label {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  top: 0;
 }
 
 /** ANIMATIONS **/
