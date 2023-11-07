@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Romuald Patfoort web développeur fullstack Javascript"
+    />
+    <meta name="author" content="Romuald Patfoort alias Sulumor" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/pictures/icons8-javascript-32.png" />
@@ -30,10 +35,15 @@
               <a class="header__list-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <button type="button" class="button__hamburger">
-            <div class="button__hamburger-line1"></div>
-            <div class="button__hamburger-line2"></div>
-            <div class="button__hamburger-line3"></div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            aria-label="Toggle navigation"
+            aria-controls="navbarResponsive"
+          >
+            <div class="navbar-toggler-line1"></div>
+            <div class="navbar-toggler-line2"></div>
+            <div class="navbar-toggler-line3"></div>
           </button>
         </nav>
       </div>
@@ -74,6 +84,7 @@
               class="home__card home__card--border_top_left"
               href="https://www.linkedin.com/in/romuald-patfoort-94274274/"
               target="_blank"
+              aria-label="linkedin"
             >
               <svg
                 class="linkedin"
@@ -91,6 +102,7 @@
               class="home__card home__card--border_top_right"
               href="https://twitter.com/PatfoortRomuald"
               target="_blank"
+              aria-label="twitter"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +141,7 @@
               class="home__card home__card--border_down_left"
               href="https://github.com/sulumor"
               target="_blank"
+              aria-label="github"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,6 +158,7 @@
             <a
               class="home__card home__card--border_down_right"
               href="mailto:romuald.patfoort@gmail.com"
+              aria-label="gmail"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +312,17 @@
         <h2 class="contact__title">Contactez-moi</h2>
         <form action="POST" class="contact__form">
           <div class="contact__form-container">
-            <input type="text" name="name" id="name" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+              required
+            />
             <label for="name" class="contact__form-label">Votre nom </label>
           </div>
           <div class="contact__form-container">
-            <input type="text" name="email" id="email" required />
+            <input type="text" name="email" id="email" autocomplete="email" />
             <label for="email" class="contact__form-label">
               Votre e-mail
             </label>

@@ -15,6 +15,36 @@
   --text-high: #eeeeee;
 }
 
+.theme-dark {
+  --bg-1: #111111;
+  --bg-2: #191919;
+  --component-bg-normal: #222222;
+  --component-bg-hover: #2a2a2a;
+  --component-bg-focus: #313131;
+  --component-border-normal: #3a3a3a;
+  --component-border-interactive: #484848;
+  --component-border-focus: #606060;
+  --bg-card: #6e6e6e;
+  --box-shadow: #7b7b7b;
+  --text: #b4b4b4;
+  --text-high: #eeeeee;
+}
+
+.theme-light {
+  --bg-1: #fcfcfc;
+  --bg-2: #f9f9f9;
+  --component-bg-normal: #f0f0f0;
+  --component-bg-hover: #e8e8e8;
+  --component-bg-focus: #e0e0e0;
+  --component-border-normal: #d9d9d9;
+  --component-border-interactive: #cecece;
+  --component-border-focus: #bbbbbb;
+  --bg-card: #8d8d8d;
+  --box-shadow: #838383;
+  --text: #646464;
+  --text-high: #202020;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   overflow-x: hidden;
@@ -94,7 +124,7 @@ h3 {
   padding: 0.5rem 1.5rem;
 }
 
-.button__hamburger {
+.navbar-toggler {
   width: 3rem;
   height: 2rem;
   cursor: pointer;
@@ -108,9 +138,9 @@ h3 {
   gap: 0.5rem;
 }
 
-.button__hamburger-line1,
-.button__hamburger-line2,
-.button__hamburger-line3 {
+.navbar-toggler-line1,
+.navbar-toggler-line2,
+.navbar-toggler-line3 {
   width: 1.75rem;
   height: 0.1rem;
   background-color: var(--text);
@@ -146,79 +176,6 @@ h3 {
   margin-top: 3rem;
   height: calc(100vh - 3rem);
   background-color: var(--bg-2);
-  /* background-image: radial-gradient(
-      circle at 67% 83%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 1%,
-      transparent 1%,
-      transparent 5%,
-      transparent 5%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 24% 80%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 27%,
-      transparent 27%,
-      transparent 63%,
-      transparent 63%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 23% 5%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 26%,
-      transparent 26%,
-      transparent 82%,
-      transparent 82%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 21% 11%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 35%,
-      transparent 35%,
-      transparent 45%,
-      transparent 45%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 10% 11%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 21%,
-      transparent 21%,
-      transparent 81%,
-      transparent 81%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 19% 61%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 20%,
-      transparent 20%,
-      transparent 61%,
-      transparent 61%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 13% 77%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 63%,
-      transparent 63%,
-      transparent 72%,
-      transparent 72%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 30% 93%,
-      hsla(317, 0%, 96%, 0.05) 0%,
-      hsla(317, 0%, 96%, 0.05) 33%,
-      transparent 33%,
-      transparent 82%,
-      transparent 82%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(237, 242, 244), rgb(141, 153, 174)); */
 }
 
 .home__title {
@@ -401,13 +358,6 @@ h3 {
 #projects {
   padding: 5rem 2rem 2rem;
   background-color: var(--bg-2);
-  /* background: rgb(43, 45, 66);
-  background: linear-gradient(
-    174deg,
-    rgba(43, 45, 66, 0.9108893557422969) 0%,
-    rgba(141, 153, 174, 1) 10%,
-    rgba(237, 242, 244, 1) 100%
-  ); */
 }
 
 .projects__container,
@@ -537,13 +487,13 @@ footer {
 }
 
 .cross {
-  .button__hamburger-line1 {
+  .navbar-toggler-line1 {
     transform: translateY(0.6rem) rotate(45deg) scale(0.8);
   }
-  .button__hamburger-line2 {
+  .navbar-toggler-line2 {
     transform: scale(0);
   }
-  .button__hamburger-line3 {
+  .navbar-toggler-line3 {
     transform: translateY(-0.6rem) rotate(-45deg) scale(0.8);
   }
 }
@@ -618,7 +568,7 @@ footer {
     display: inline;
   }
 
-  .button__hamburger {
+  .navbar-toggler {
     display: none;
   }
 

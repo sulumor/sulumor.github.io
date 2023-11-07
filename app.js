@@ -1,4 +1,4 @@
-const btnSmallMenu = document.querySelector('.button__hamburger')
+const btnSmallMenu = document.querySelector('.navbar-toggler')
 const smallMenu = document.querySelector('.header__content--sm-menu')
 const linksSmallMenu = document.querySelectorAll('.header__list-link--sm-menu')
 const home__cards = document.querySelectorAll('.home__card')
