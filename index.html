@@ -10,7 +10,7 @@
     <meta name="author" content="Romuald Patfoort alias Sulumor" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="shortcut icon" href="/pictures/icons8-javascript-32.png" />
+    <link rel="shortcut icon" href="/pictures/favicon.png" />
     <title>Romuald Patfoort | Développeur Fullstack JS</title>
   </head>
   <body>
@@ -20,6 +20,9 @@
           <span class="header__link--main">ROMUALD PATFOORT</span>
           <span class="header__link--sub">SULUMOR</span>
         </a>
+        <div class="header__theme-switch" aria-label="Changer le thème">
+          <img src="./pictures/icon-dark.png" id="theme-switch-image" />
+        </div>
         <nav>
           <ul class="header__list-container">
             <li class="header__list">
@@ -322,7 +325,13 @@
             <label for="name" class="contact__form-label">Votre nom </label>
           </div>
           <div class="contact__form-container">
-            <input type="text" name="email" id="email" autocomplete="email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+            />
             <label for="email" class="contact__form-label">
               Votre e-mail
             </label>
