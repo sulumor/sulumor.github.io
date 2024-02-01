@@ -310,7 +310,12 @@
       </section>
       <section id="contact">
         <h2 class="contact__title">Contactez-moi</h2>
-        <form action="POST" class="contact__form">
+        <form 
+          action="https://formspree.io/f/xayrenaz" 
+          method="POST" 
+          class="contact__form"
+          id="my-form"
+        >
           <div class="contact__form-container">
             <input
               type="text"
@@ -345,6 +350,7 @@
             </label>
           </div>
           <button class="contact__form-button" type="submit">Envoyer</button>
+          <p id="my-form-status"></p>
         </form>
       </section>
     </main>
