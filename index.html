@@ -20,51 +20,49 @@
           <span class="header__link--main">ROMUALD PATFOORT</span>
           <span class="header__link--sub">SULUMOR</span>
         </a>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
           <ul class="header__list-container">
             <li class="header__list">
-              <a class="header__list-link" href="/">Accueil</a>
+              <a class="header__list-link" href="/" aria-label="Accueil">Accueil</a>
             </li>
             <li class="header__list">
-              <a class="header__list-link" href="#about">À propos</a>
+              <a class="header__list-link" href="#about" aria-label="À propos">À propos</a>
             </li>
             <li class="header__list">
-              <a class="header__list-link" href="#projects">Réalisations</a>
+              <a class="header__list-link" href="#projects" aria-label="Réalisations">Réalisations</a>
             </li>
             <li class="header__list">
-              <a class="header__list-link" href="#contact">Contact</a>
+              <a class="header__list-link" href="#contact" aria-label="Contact">Contact</a>
             </li>
           </ul>
           <button
             type="button"
             class="navbar-toggler"
-            aria-label="Toggle navigation"
-            aria-controls="navbarResponsive"
+            aria-expanded=false
+            aria-label="Menu"
           >
             <div class="navbar-toggler-line1"></div>
             <div class="navbar-toggler-line2"></div>
             <div class="navbar-toggler-line3"></div>
           </button>
-        </nav>
-      </div>
-      <div class="header__content--sm-menu">
-        <nav>
-          <ul class="header__list-container--sm-menu">
-            <li class="header__list--sm-menu">
-              <a href="/" class="header__list-link--sm-menu">Accueil</a>
-            </li>
-            <li class="header__list--sm-menu">
-              <a href="#about" class="header__list-link--sm-menu">À propos</a>
-            </li>
-            <li class="header__list--sm-menu">
-              <a href="#projects" class="header__list-link--sm-menu">
-                Réalisations
-              </a>
-            </li>
-            <li class="header__list--sm-menu">
-              <a href="#contact" class="header__list-link--sm-menu">Contact</a>
-            </li>
-          </ul>
+          <div class="header__content--sm-menu">
+              <ul class="header__list-container--sm-menu">
+                <li class="header__list--sm-menu">
+                  <a href="/" class="header__list-link--sm-menu" aria-label="Accueil">Accueil</a>
+                </li>
+                <li class="header__list--sm-menu">
+                  <a href="#about" class="header__list-link--sm-menu" aria-label="À propos">À propos</a>
+                </li>
+                <li class="header__list--sm-menu">
+                  <a href="#projects" class="header__list-link--sm-menu" aria-label="Réalisations">
+                    Réalisations
+                  </a>
+                </li>
+                <li class="header__list--sm-menu">
+                  <a href="#contact" class="header__list-link--sm-menu" aria-label="Contact">Contact</a>
+                </li>
+              </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -77,7 +75,7 @@
         <p class="home__text">
           Développeur Web <span class="bold">Fullstack</span> Javascript
         </p>
-        <a class="home__link" href="#projects">Mes réalisations</a>
+        <a class="home__link" href="#projects" aria-label="Mes réalisations">Mes réalisations</a>
         <div class="home__cards-container">
           <div class="home__cards_up-container">
             <a
@@ -236,6 +234,7 @@
                 href="https://jeux-du-pendu.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Accès au site jeux-de-mots"
               >
                 <img
                   class="projects__article-img"
@@ -250,7 +249,7 @@
               : enfant, sur une base de mots propre au site, et adulte, trouvant
               des mots aléatoires via une API.
             </p>
-            <a href="/projects/jeuxdemots.html" class="projects__article-link"
+            <a href="/projects/jeuxdemots.html" class="projects__article-link" aria-label="En savoir plus sur jeux de mots"
               >En savoir plus</a
             >
           </article>
@@ -262,6 +261,7 @@
                 href="https://pokemagasin.sulumor.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Accès au site pokemagasin"
               >
                 <img
                   class="projects__article-img"
@@ -278,7 +278,7 @@
               'produit', possibilité de filtrer, mise dans un
               <span class="bold">panier</span>, gestion des stocks.
             </p>
-            <a href="/projects/pokemagasin.html" class="projects__article-link"
+            <a href="/projects/pokemagasin.html" class="projects__article-link" aria-label="En savoir plus sur pokemagasin"
               >En savoir plus</a
             >
           </article>
@@ -290,6 +290,7 @@
                 href="https://web-romain.sulumor.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Accès au site web romain"
               >
                 <img
                   class="projects__article-img"
@@ -302,7 +303,7 @@
               <span class="bold">Maquette</span> pour un artisan carreleur afin
               de présenter son travail.
             </p>
-            <a href="/projects/web_Romain.html" class="projects__article-link"
+            <a href="/projects/web_Romain.html" class="projects__article-link" aria-label="En savoir plus sur web romain"
               >En savoir plus</a
             >
           </article>
@@ -349,7 +350,7 @@
               Votre message
             </label>
           </div>
-          <button class="contact__form-button" type="submit">Envoyer</button>
+          <button class="contact__form-button" type="submit" aria-label="Envoyer">Envoyer</button>
           <p id="my-form-status"></p>
         </form>
       </section>

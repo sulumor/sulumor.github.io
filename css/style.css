@@ -190,7 +190,6 @@ h3 {
 .home__text {
   font-size: 1.2rem;
   display: inline;
-  text-align: justify;
 }
 
 .home__link,
@@ -295,11 +294,7 @@ h3 {
   padding: 5rem 2rem 2rem;
 }
 
-.about__intro,
-.about__article-text,
-.projects__article-text {
-  text-align: justify;
-}
+
 
 .about__article-container,
 .about__article {

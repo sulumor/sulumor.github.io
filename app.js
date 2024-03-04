@@ -12,8 +12,10 @@ else body.removeAttribute('data-theme');
 
 //toggle du button menu Mobile
 function actionPressSmallMenu() {
-  smallMenu.classList.toggle('active')
-  btnSmallMenu.classList.toggle('cross')
+  smallMenu.classList.toggle('active');
+  btnSmallMenu.classList.toggle('cross');
+  if (btnSmallMenu.ariaExpanded === "false") btnSmallMenu.setAttribute("aria-expanded", true);
+  else btnSmallMenu.setAttribute("aria-expanded", false);
 }
 
 btnSmallMenu.addEventListener('click', actionPressSmallMenu);
