@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="description"
-      content="Portfolio de Romuald Patfoort web développeur fullstack Javascript"
+    name="description"
+    content="Portfolio de Romuald Patfoort web développeur fullstack Javascript"
     />
     <meta name="author" content="Romuald Patfoort alias Sulumor" />
+    <title>Romuald Patfoort | Développeur Fullstack JS</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/pictures/favicon.png" />
-    <title>Romuald Patfoort | Développeur Fullstack JS</title>
+    <script src="/app.js" type="text/javascript" defer></script>
   </head>
   <body>
     <header class="header">
@@ -66,6 +67,7 @@
         </nav>
       </div>
     </header>
+
     <main class="main">
       <section id="home">
         <h1 class="home__title">
@@ -174,6 +176,7 @@
           </div>
         </div>
       </section>
+
       <section id="about">
         <h2 class="about__title">À propos</h2>
         <p class="about__intro">
@@ -218,14 +221,43 @@
               <span class="about__article-tag">Scss</span>
               <span class="about__article-tag">Responsive Design</span>
               <span class="about__article-tag">API</span>
-              <span class="about__article-tag">Librairies</span>
+              <span class="about__article-tag">WordPress</span>
+              <span class="about__article-tag">ExpressJS</span>
+              <span class="about__article-tag">PostgreSQL</span>
+              <span class="about__article-tag">GraphQL</span>
+              <span class="about__article-tag">Jest</span>
             </div>
           </article>
         </div>
       </section>
+
       <section id="projects">
         <h2 class="projects__title">Mes réalisations</h2>
         <div class="projects__container">
+          <article class="projects__article">
+            <h3 class="projects__article-title">Clara Néville</h3>
+            <div class="projects__article-img-container">
+              <a
+                class="projects__article-img-link"
+                href="https://claraneville.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Accès au site claraneville"
+              >
+                <img
+                  class="projects__article-img"
+                  src="/pictures/claraneville.png"
+                  alt="page_d'accueil_du_site_claraneville.fr"
+                />
+              </a>
+            </div>
+            <p class="projects__article-text">
+              Site de présentation d'une artiste fait avec l'aide de <span class="bold">WordPress</span> afin qu'elle puisse apporter les modifications voulues à sa guise 
+            </p>
+            <a href="/projects/claraneville.html" class="projects__article-link" aria-label="En savoir plus sur claraneville"
+              >En savoir plus</a
+            >
+          </article>
           <article class="projects__article">
             <h3 class="projects__article-title">Jeux de mots</h3>
             <div class="projects__article-img-container">
@@ -309,6 +341,7 @@
           </article>
         </div>
       </section>
+
       <section id="contact">
         <h2 class="contact__title">Contactez-moi</h2>
         <form 
@@ -355,7 +388,9 @@
         </form>
       </section>
     </main>
-    <footer class="footer">&copy; 2023 Tous droits réservés | Sulumor</footer>
-    <script src="/app.js" type="text/javascript"></script>
+
+    <footer class="footer">
+      &copy; 2023 Tous droits réservés | Sulumor
+    </footer>
   </body>
 </html>
